@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cube-all">
+            <div class="cube-top">
+                <p></p>
+            </div>
+            <div class="cube-bot">
+                <table onclick="clickFun()">
+                    <tr class="title">
+                        <td><button onclick="calculadora.valor(this.value);" value='%'>%</button></td>
+                        <td><button onclick="calculadora.valor(this.value);" value='/'>÷</button></td>
+                        <td><button onclick="calculadora.numero = '';" value=''>C</button></td>
+                        <td><button onclick="calculadora.backspace();"><span class="material-icons">
+                            backspace
+                        </span></button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="calculadora.valor(this.value);" value='7'>7</button></td>
+                        <td><button onclick="calculadora.valor(this.value);" value='8'>8</button></td>
+                        <td><button onclick="calculadora.valor(this.value);" value='9'>9</button></td>
+                        <td><button onclick="calculadora.valor(this.value);" value='*'>*</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="calculadora.valor(this.value);" value='4'>4</button></td>
+                        <td><button onclick="calculadora.valor(this.value);" value='5'>5</button></td>
+                        <td><button onclick="calculadora.valor(this.value);" value='6'>6</button></td>
+                        <td><button onclick="calculadora.valor(this.value);" value='-'>-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="calculadora.valor(this.value);" value='1'>1</button></td>
+                        <td><button onclick="calculadora.valor(this.value);" value='2'>2</button></td>
+                        <td><button onclick="calculadora.valor(this.value);" value='3'>3</button></td>
+                        <td><button onclick="calculadora.valor(this.value);" value='+'>+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="calculadora.valor(this.value);" value=''></button></td>
+                        <td><button onclick="calculadora.valor(this.value);" value='0'>0</button></td>
+                        <td><button onclick="calculadora.valor(this.value);" value='.'>.</button></td>
+                        <td><button onclick="calculadora.calcular()" value='='>=</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+html {
+    display:flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+  }
+  .cube-all{
+    background-color: #212121;
+    box-shadow: .5rem .5rem 0 #fab700;
+    border: 3px solid #fab700;
+    border-radius: 4px;  
+    display:flex;
+    align-items: center;  
+    flex-direction: column;
+  }
+  .cube-top{
+    height: 100px;
+    background-color: #fff;
+    width: 95%;
+    margin: 3px;
+    display: flex;
+    position: relative;
+  }
+  p{
+    word-wrap: break-word;
+    flex-direction: column;
+    position: absolute;
+    text-align: end;
+    bottom: 0;
+    width: 95%;
+    padding: 10px;
+    font-size: 30px;
+    margin: -10px ;
+  }
+  table{
+    display: flex;
+    flex-direction: column;
+  }
+  button{
+    width: 3.5em;
+    height: 3em;
+  }
+  
+  
